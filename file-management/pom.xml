@@ -65,6 +65,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>file-management</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

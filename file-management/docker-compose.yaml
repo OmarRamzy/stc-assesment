@@ -6,12 +6,12 @@ services:
         dockerfile: DockerFile
     ports:
       - 8080:8080
+
     depends_on:
-      - db
-  db:
+      - database
+  database:
     image: mysql:latest
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root1
       MYSQL_DATABASE: mydatabase
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_PASSWORD: root1
